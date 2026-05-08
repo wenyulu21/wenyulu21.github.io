@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="陆汶雨，南京中医药大学中医药人工智能专业硕士研究生，研究方向为人工智能药物设计。"
+    />
+    <title>陆汶雨 | Wenyu Lu</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="browser-frame">
+      <header class="topbar" aria-label="Primary navigation">
+        <nav class="nav-links" aria-label="Page sections">
+          <a href="#about" data-i18n="nav.about">About</a>
+          <a href="#education" data-i18n="nav.education">Education</a>
+          <a href="#publications" data-i18n="nav.publications">Publications</a>
+          <a href="#news" data-i18n="nav.news">News</a>
+        </nav>
+        <button class="lang-toggle" type="button" aria-label="切换到中文">
+          <span class="lang-current">中文</span>
+        </button>
+      </header>
+
+      <main class="layout">
+        <aside class="profile-panel" aria-label="Profile">
+          <img class="avatar" src="头像.jpg" alt="白色小狗头像" />
+          <h1 data-i18n="profile.name">Wenyu Lu</h1>
+          <p class="role" data-i18n="profile.role">Master Student</p>
+          <p class="school" data-i18n="profile.school">Nanjing University of Chinese Medicine</p>
+
+          <div class="profile-tabs" aria-label="Profile details">
+            <button class="profile-tab active" type="button" data-profile-tab="location" aria-label="地点">
+              <img src="地点.svg" alt="" />
+            </button>
+            <button class="profile-tab" type="button" data-profile-tab="email" aria-label="邮箱">
+              <img src="邮箱.svg" alt="" />
+            </button>
+            <button class="profile-tab" type="button" data-profile-tab="interests" aria-label="兴趣">
+              <img src="兴趣.svg" alt="" />
+            </button>
+          </div>
+
+          <section class="side-card">
+            <div class="profile-detail active" data-profile-panel="location">
+              <h2 data-i18n="profile.locationTitle">Location</h2>
+              <p class="location-line" data-i18n="profile.locationRegion">China · Jiangsu Province · Nanjing</p>
+              <p class="location-line" data-i18n="profile.locationDetail">
+                Nanjing University of Chinese Medicine, No. 138 Xianlin Avenue, Qixia District
+              </p>
+            </div>
+            <div class="profile-detail" data-profile-panel="email">
+              <h2 data-i18n="profile.emailTitle">Email</h2>
+              <p><a href="mailto:wenyulu21@163.com">wenyulu21@163.com</a></p>
+            </div>
+            <div class="profile-detail" data-profile-panel="interests">
+              <h2 data-i18n="profile.interestsTitle">Interests</h2>
+              <ul>
+                <li data-i18n="profile.interest1">AI-driven Drug Design</li>
+                <li data-i18n="profile.interest2">AI for Traditional Chinese Medicine</li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+
+        <div class="content">
+          <section class="section" id="about" aria-labelledby="about-title">
+            <h2 id="about-title" data-i18n="about.title">About</h2>
+            <p data-i18n="about.p1">
+              I am a third-year master's student in Artificial Intelligence of Traditional Chinese Medicine at Nanjing
+              University of Chinese Medicine, focusing on AI-driven drug design.
+            </p>
+            <p data-i18n="about.p2">
+              I obtained my bachelor's degree in Computer Science and Technology from Nanjing University of Chinese
+              Medicine, with interdisciplinary training in computing and TCM.
+            </p>
+            <p data-i18n="about.p3">
+              My current interests include applying machine learning and drug discovery methods to the modernization of
+              traditional Chinese medicine.
+            </p>
+          </section>
+
+          <section class="section" id="education" aria-labelledby="education-title">
+            <h2 id="education-title" data-i18n="education.title">Education</h2>
+            <div class="education-list">
+              <article class="education-item">
+                <img class="school-logo" src="南中医校徽.png" alt="Nanjing University of Chinese Medicine logo" />
+                <div>
+                  <div class="year" data-i18n="education.masterTime">Master</div>
+                  <h3 data-i18n="education.masterTitle">Nanjing University of Chinese Medicine</h3>
+                  <p data-i18n="education.masterDesc">
+                    Artificial Intelligence of Traditional Chinese Medicine · Third-year Master's Student
+                  </p>
+                </div>
+              </article>
+              <article class="education-item">
+                <img class="school-logo" src="南中医校徽.png" alt="Nanjing University of Chinese Medicine logo" />
+                <div>
+                  <div class="year" data-i18n="education.bachelorTime">Bachelor</div>
+                  <h3 data-i18n="education.bachelorTitle">Nanjing University of Chinese Medicine</h3>
+                  <p data-i18n="education.bachelorDesc">Computer Science and Technology</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="section" id="publications" aria-labelledby="publications-title">
+            <div class="section-title-row">
+              <h2 id="publications-title" data-i18n="publications.title">Publications</h2>
+            </div>
+
+            <article class="paper-card publication-card">
+              <h3>
+                Machine Learning-Guided Generation of Novel Pseudo-Natural Products: Applications to Accelerate Drug
+                Discovery.
+              </h3>
+              <p class="publication-authors">
+                <span class="pub-label">Authors</span>
+                <span>
+                  <strong>Wenyu Lu</strong>, Xiaoqian Peng, Yan Huang, Zhe Zheng, Zhenzhen Zhu, Xunkai Yin, Wenzhuo Xu,
+                  Shulan Mei, Xiuhong Lu, Xia Zhang, Yue Wang, Lihong Hu, and Jian Liu
+                </span>
+              </p>
+              <p class="paper-meta"><span>Journal</span><em>J. Chem. Inf. Model.</em> 2025.</p>
+              <a class="doi-link" href="https://doi.org/10.1021/acs.jcim.5c01955" target="_blank" rel="noreferrer">
+                https://doi.org/10.1021/acs.jcim.5c01955
+              </a>
+            </article>
+
+            <article class="paper-card publication-card">
+              <h3>
+                AI-Driven Transfer Learning and Generative Model (TransGenGRU) Enables the Drug Discovery of Novel
+                Natural Guaianolide Sesquiterpene Derivatives as Potent NLRP3 Inhibitors.
+              </h3>
+              <p class="publication-authors">
+                <span class="pub-label">Authors</span>
+                <span>
+                  Weijiang Lin, Ping Wang, Yishu Zhang, <strong>Wenyu Lu</strong>, Meng Yang, Zhenzhen Zhu, Xunkai Yin,
+                  Jiahao Lv, Zhe Zheng, Shulan Mei, Yan Huang, Wenzhuo Xu, Xiaoqian Peng, Yang Hu, Yinan Zhang, Qi Lv,
+                  Jian Liu, and Lihong Hu
+                </span>
+              </p>
+              <p class="paper-meta"><span>Journal</span><em>J. Med. Chem.</em> 2025.</p>
+              <a class="doi-link" href="https://doi.org/10.1021/acs.jmedchem.5c01663" target="_blank" rel="noreferrer">
+                https://doi.org/10.1021/acs.jmedchem.5c01663
+              </a>
+            </article>
+          </section>
+
+          <section class="section" id="news" aria-labelledby="news-title">
+            <div class="section-title-row">
+              <h2 id="news-title" data-i18n="news.title">News</h2>
+            </div>
+            <article class="paper-card news-card">
+              <h3 data-i18n="news.item1Date">May 8, 2026</h3>
+              <p data-i18n="news.item1Desc">Personal homepage created.</p>
+            </article>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
