@@ -65,11 +65,14 @@ const translations = {
 
 const toggle = document.querySelector(".lang-toggle");
 const currentLabel = document.querySelector(".lang-current");
+const themeToggle = document.querySelector(".theme-toggle");
+const themeLabel = document.querySelector(".theme-current");
 const profileTabs = document.querySelectorAll("[data-profile-tab]");
 const profilePanels = document.querySelectorAll("[data-profile-panel]");
 const navLinks = document.querySelectorAll(".nav-links a");
 const pageSections = document.querySelectorAll(".content .section");
 let currentLanguage = "zh";
+let currentTheme = localStorage.getItem("theme") || "light";
 
 function setLanguage(language) {
   currentLanguage = language;
@@ -81,6 +84,14 @@ function setLanguage(language) {
     const key = element.dataset.i18n;
     element.textContent = translations[language][key] || element.textContent;
   });
+}
+
+function setTheme(theme) {
+  currentTheme = theme;
+  document.documentElement.dataset.theme = theme;
+  themeLabel.textContent = theme === "dark" ? "☀" : "☾";
+  themeToggle.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
+  localStorage.setItem("theme", theme);
 }
 
 function setProfilePanel(panelName) {
@@ -126,6 +137,10 @@ toggle.addEventListener("click", () => {
   setLanguage(currentLanguage === "zh" ? "en" : "zh");
 });
 
+themeToggle.addEventListener("click", () => {
+  setTheme(currentTheme === "dark" ? "light" : "dark");
+});
+
 profileTabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     setProfilePanel(tab.dataset.profileTab);
@@ -136,5 +151,6 @@ window.addEventListener("scroll", updateActiveNavFromScroll, { passive: true });
 window.addEventListener("resize", updateActiveNavFromScroll);
 
 setLanguage("en");
+setTheme(currentTheme);
 setProfilePanel("location");
 updateActiveNavFromScroll();
