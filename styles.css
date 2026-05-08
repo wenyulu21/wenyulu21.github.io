@@ -289,9 +289,14 @@ h2 {
 }
 
 .profile-detail a {
-  color: var(--accent);
+  color: var(--link);
   font-weight: 800;
   overflow-wrap: anywhere;
+}
+
+.profile-detail a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .content {
