@@ -297,7 +297,7 @@ h2 {
 .content {
   grid-column: 2;
   min-width: 0;
-  padding-bottom: 220px;
+  padding-bottom: 48px;
 }
 
 .section {
@@ -552,7 +552,7 @@ h2 {
 
   .content {
     grid-column: auto;
-    padding-bottom: 120px;
+    padding-bottom: 48px;
   }
 
   .avatar {
@@ -722,7 +722,7 @@ h2 {
   }
 
   .content {
-    padding-bottom: 150px;
+    padding-bottom: 56px;
   }
 
 }
