@@ -504,12 +504,21 @@ h2 {
 }
 
 @media (max-width: 560px) {
+  html {
+    scroll-padding-top: 118px;
+  }
+
   .browser-frame {
     width: 100%;
   }
 
   .topbar {
-    padding: 12px;
+    position: sticky;
+    top: 0;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+    padding: 10px 12px 12px;
+    border-bottom: 1px solid rgba(229, 232, 239, 0.9);
   }
 
   .nav-links a {
@@ -522,28 +531,86 @@ h2 {
   }
 
   .layout {
-    padding: 22px 14px 26px;
+    gap: 28px;
+    padding: 18px 14px 30px;
+  }
+
+  .profile-panel {
+    max-width: 100%;
+    padding: 18px 16px;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    background: linear-gradient(180deg, #fff, #fbfcff);
+    box-shadow: 0 12px 30px rgba(24, 33, 49, 0.06);
   }
 
   .avatar {
-    width: 200px;
-    height: 200px;
+    width: 148px;
+    height: 148px;
+    border-radius: 18px;
+    box-shadow: 0 12px 24px rgba(24, 33, 49, 0.12);
   }
 
   .profile-panel h1 {
-    font-size: 1.8rem;
+    margin: 18px 0 8px;
+    font-size: 1.85rem;
+  }
+
+  .role {
+    font-size: 1.05rem;
+  }
+
+  .school {
+    max-width: 100%;
+    font-size: 0.96rem;
+    line-height: 1.5;
+  }
+
+  .profile-tabs {
+    grid-template-columns: repeat(3, 44px);
+    gap: 16px;
+    margin: 22px 0 18px;
+  }
+
+  .profile-tab {
+    width: 44px;
+    height: 44px;
+  }
+
+  .side-card {
+    padding: 16px 14px;
+    text-align: left;
+  }
+
+  .side-card h2 {
+    margin-bottom: 8px;
+  }
+
+  .profile-detail p,
+  .side-card li {
+    font-size: 0.94rem;
+    line-height: 1.55;
+  }
+
+  .section {
+    scroll-margin-top: 118px;
+    margin-bottom: 30px;
   }
 
   .section h2 {
-    font-size: 1.7rem;
+    margin-bottom: 14px;
+    font-size: 1.72rem;
   }
 
   .section p {
-    font-size: 1rem;
+    font-size: 0.98rem;
+    line-height: 1.68;
   }
 
   .paper-card {
     padding: 18px 16px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(24, 33, 49, 0.045);
   }
 
   .paper-card h3,
@@ -555,6 +622,7 @@ h2 {
   .publication-authors {
     padding: 10px 12px;
     font-size: 0.9rem !important;
+    line-height: 1.5 !important;
   }
 
   .doi-link {
@@ -567,6 +635,8 @@ h2 {
   .education-item {
     grid-template-columns: 66px 1fr;
     gap: 14px;
+    padding: 16px 14px;
+    border-radius: 12px;
   }
 
   .school-logo {
@@ -574,11 +644,21 @@ h2 {
     height: 60px;
   }
 
+  .year {
+    margin-bottom: 4px;
+    font-size: 0.88rem;
+  }
+
+  .content {
+    padding-bottom: 150px;
+  }
+
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .nav-links {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
   }
 
   .lang-toggle {
