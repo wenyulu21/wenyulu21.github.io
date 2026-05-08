@@ -48,6 +48,7 @@ body {
   padding: 0;
   color: var(--ink);
   background: var(--page-bg);
+  font-size: 15px;
   font-family: "Inter", "Noto Sans SC", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
@@ -95,7 +96,7 @@ h2 {
 .nav-links {
   grid-column: 2;
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0;
   width: 100%;
   border-radius: var(--radius);
@@ -119,7 +120,7 @@ h2 {
 .theme-toggle {
   min-height: 44px;
   border-radius: var(--radius);
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   font-weight: 500;
 }
 
@@ -190,7 +191,7 @@ h2 {
 
 .profile-panel h1 {
   margin: 28px 0 10px;
-  font-size: 2.1rem;
+  font-size: 1.95rem;
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
@@ -204,13 +205,13 @@ h2 {
 
 .role {
   color: var(--accent);
-  font-size: 1.22rem;
+  font-size: 1.12rem;
   font-weight: 700;
 }
 
 .school {
   color: var(--ink);
-  font-size: 1.08rem;
+  font-size: 1rem;
 }
 
 .profile-tabs {
@@ -306,16 +307,23 @@ h2 {
 
 .section h2 {
   margin: 0 0 20px;
-  font-size: 2rem;
+  font-size: 1.85rem;
   line-height: 1.1;
   letter-spacing: 0;
+}
+
+.embedded-heading {
+  margin: 30px 0 16px;
+  color: var(--ink);
+  font-size: 1.12rem;
+  line-height: 1.25;
 }
 
 .section p {
   max-width: 790px;
   margin: 0 0 20px;
   color: var(--ink);
-  font-size: 1.08rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -361,13 +369,13 @@ h2 {
 .education-item h3 {
   margin: 0 0 10px;
   color: var(--ink);
-  font-size: 1.18rem;
+  font-size: 1.08rem;
   line-height: 1.35;
 }
 
 .paper-card p {
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.94rem;
   line-height: 1.55;
 }
 
@@ -404,7 +412,7 @@ h2 {
   border-radius: 0 var(--radius) var(--radius) 0;
   background: var(--soft);
   color: var(--muted) !important;
-  font-size: 0.95rem !important;
+  font-size: 0.9rem !important;
   font-weight: 500;
   line-height: 1.55 !important;
 }
@@ -418,7 +426,7 @@ h2 {
   display: inline-flex;
   margin-top: 4px;
   color: var(--link);
-  font-size: 0.98rem;
+  font-size: 0.92rem;
   font-weight: 800;
   overflow-wrap: anywhere;
 }
@@ -431,7 +439,7 @@ h2 {
 .news-card h3 {
   margin-bottom: 10px;
   color: var(--accent);
-  font-size: 1rem;
+  font-size: 0.94rem;
 }
 
 .news-card p {
@@ -466,7 +474,7 @@ h2 {
 .education-item p {
   margin: 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 0.94rem;
 }
 
 :root[data-theme="dark"] .avatar {
@@ -512,7 +520,7 @@ h2 {
   .nav-links {
     grid-column: 1 / -1;
     grid-row: 2;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 6px;
     overflow: visible;
   }
@@ -617,16 +625,16 @@ h2 {
 
   .profile-panel h1 {
     margin: 18px 0 8px;
-    font-size: 1.85rem;
+    font-size: 1.7rem;
   }
 
   .role {
-    font-size: 1.05rem;
+    font-size: 0.98rem;
   }
 
   .school {
     max-width: 100%;
-    font-size: 0.96rem;
+    font-size: 0.9rem;
     line-height: 1.5;
   }
 
@@ -652,7 +660,7 @@ h2 {
 
   .profile-detail p,
   .side-card li {
-    font-size: 0.94rem;
+    font-size: 0.88rem;
     line-height: 1.55;
   }
 
@@ -663,11 +671,11 @@ h2 {
 
   .section h2 {
     margin-bottom: 14px;
-    font-size: 1.72rem;
+    font-size: 1.55rem;
   }
 
   .section p {
-    font-size: 0.98rem;
+    font-size: 0.92rem;
     line-height: 1.68;
   }
 
@@ -679,19 +687,19 @@ h2 {
 
   .paper-card h3,
   .education-item h3 {
-    font-size: 1.05rem;
+    font-size: 0.98rem;
     overflow-wrap: anywhere;
   }
 
   .publication-authors {
     padding: 10px 12px;
-    font-size: 0.9rem !important;
+    font-size: 0.84rem !important;
     line-height: 1.5 !important;
   }
 
   .doi-link {
     display: block;
-    font-size: 0.9rem;
+    font-size: 0.84rem;
     line-height: 1.45;
     word-break: break-word;
   }
@@ -710,7 +718,7 @@ h2 {
 
   .year {
     margin-bottom: 4px;
-    font-size: 0.88rem;
+    font-size: 0.82rem;
   }
 
   .content {

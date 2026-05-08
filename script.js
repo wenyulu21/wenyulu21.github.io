@@ -1,7 +1,6 @@
 const translations = {
   zh: {
-    "nav.about": "关于我",
-    "nav.education": "教育经历",
+    "nav.about": "个人简介",
     "nav.publications": "论文与成果",
     "nav.news": "动态",
     "profile.name": "陆汶雨",
@@ -14,10 +13,8 @@ const translations = {
     "profile.interestsTitle": "兴趣",
     "profile.interest1": "人工智能药物设计",
     "profile.interest2": "中医药人工智能",
-    "about.title": "关于我",
-    "about.p1": "我是南京中医药大学中医药人工智能专业硕士研究生三年级在读，研究方向为人工智能药物设计。",
-    "about.p2": "本科毕业于南京中医药大学计算机科学与技术专业，具备计算机科学与中医药交叉学习背景。",
-    "about.p3": "目前关注机器学习与药物发现方法在中医药现代化研究中的应用。",
+    "about.title": "个人简介",
+    "about.p1": "我是南京中医药大学中医药人工智能专业的三年级硕士研究生，研究方向为人工智能药物发现与设计。",
     "education.title": "教育经历",
     "education.masterTime": "硕士在读",
     "education.masterTitle": "南京中医药大学",
@@ -28,11 +25,10 @@ const translations = {
     "publications.title": "论文与成果",
     "news.title": "动态",
     "news.item1Date": "2026年5月8日",
-    "news.item1Desc": "个人主页创建。"
+    "news.item1Desc": "🎉🎉🎉 个人主页创建。"
   },
   en: {
-    "nav.about": "About",
-    "nav.education": "Education",
+    "nav.about": "Biography",
     "nav.publications": "Publications",
     "nav.news": "News",
     "profile.name": "Wenyu Lu",
@@ -45,10 +41,8 @@ const translations = {
     "profile.interestsTitle": "Interests",
     "profile.interest1": "AI-driven Drug Design",
     "profile.interest2": "AI for Traditional Chinese Medicine",
-    "about.title": "About",
-    "about.p1": "I am a third-year master's student in Artificial Intelligence of Traditional Chinese Medicine at Nanjing University of Chinese Medicine, focusing on AI-driven drug design.",
-    "about.p2": "I obtained my bachelor's degree in Computer Science and Technology from Nanjing University of Chinese Medicine, with interdisciplinary training in computing and TCM.",
-    "about.p3": "My current interests include applying machine learning and drug discovery methods to the modernization of traditional Chinese medicine.",
+    "about.title": "Biography",
+    "about.p1": "I am a third-year master's student in Artificial Intelligence of Traditional Chinese Medicine at Nanjing University of Chinese Medicine, focusing on AI-driven drug discovery&design.",
     "education.title": "Education",
     "education.masterTime": "Master",
     "education.masterTitle": "Nanjing University of Chinese Medicine",
@@ -59,7 +53,7 @@ const translations = {
     "publications.title": "Publications",
     "news.title": "News",
     "news.item1Date": "May 8, 2026",
-    "news.item1Desc": "Personal homepage created."
+    "news.item1Desc": "🎉🎉🎉 Personal homepage created."
   }
 };
 
