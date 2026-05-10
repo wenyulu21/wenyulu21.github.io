@@ -604,8 +604,9 @@ h2 {
   }
 
   .holiday-banner {
-    padding: 22px 14px 8px;
-    font-size: 2.65rem;
+    padding: 24px 14px 10px;
+    font-size: 3.2rem;
+    line-height: 1.05;
   }
 
   .topbar {
