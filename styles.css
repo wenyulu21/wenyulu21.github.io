@@ -68,10 +68,10 @@ a {
 }
 
 .holiday-banner {
-  padding: 26px 46px 6px;
+  padding: 30px 46px 10px;
   color: #d9486e;
   font-family: Georgia, "Times New Roman", "Noto Sans SC", serif;
-  font-size: 2.4rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 1.1;
   text-align: center;
@@ -604,8 +604,8 @@ h2 {
   }
 
   .holiday-banner {
-    padding: 20px 14px 4px;
-    font-size: 1.8rem;
+    padding: 22px 14px 8px;
+    font-size: 2.65rem;
   }
 
   .topbar {
