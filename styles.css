@@ -67,20 +67,6 @@ a {
   overflow: visible;
 }
 
-.holiday-banner {
-  padding: 30px 46px 10px;
-  color: #d9486e;
-  font-family: Georgia, "Times New Roman", "Noto Sans SC", serif;
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 1.1;
-  text-align: center;
-}
-
-:root[data-theme="dark"] .holiday-banner {
-  color: #ff8baa;
-}
-
 .topbar {
   position: sticky;
   top: 0;
@@ -601,12 +587,6 @@ h2 {
 
   .browser-frame {
     width: 100%;
-  }
-
-  .holiday-banner {
-    padding: 24px 14px 10px;
-    font-size: 3.2rem;
-    line-height: 1.05;
   }
 
   .topbar {
